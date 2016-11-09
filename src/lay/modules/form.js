@@ -194,7 +194,7 @@ layui.define('layer', function(exports){
           reElem.on('click', function(){
             var name = radio[0].name, forms = radio.parents(ELEM);
             var filter = radio.attr('lay-filter'); //获取过滤器
-            var sameRadio = forms.find('input[name='+ name +']'); //找到相同name的兄弟
+            var sameRadio = forms.find('input[name="'+ name +'"]'); //找到相同name的兄弟
             
             layui.each(sameRadio, function(){
               var next = $(this).next('.'+CLASS);
